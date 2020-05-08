@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>الموقع - طلب توريد خرسانة جاهزة</title>
+	<link rel="icon" href="htmlLogo.png">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/droid-arabic-kufi" type="text/css"/>
+	<!--  بتاع الخط (حاولت أحمل الفونت وأستخدمه معرفتش ! -->
+  
+	<!--  ملف ستايل بتاعي -->
+	<link rel="stylesheet" type="text/css" href="mystyle2.css">
+	
+	<!-- مطلوب لشريط التقدم بتاع الفورم -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  
+
+<style> 
+html, body { font-family: 'DroidArabicKufiRegular'; }
+<!--السطر بتاع الفونت ده لما بحذفه من هنا وأكتبه في ملف css external الخط بيبوظ !! -->
+* {box-sizing: border-box;}
+
+.progress {
+    height: 5px
+}
+</style>
+
+</head>
+<body>
+<!-- Start Header -->
+<div class="header">
+	<a href="#"><img src="logo/logo.png"></a>
+	<div class="header-right">
+		<a href="#">اتصل بنا</a>
+		<a href="#">حمل التطبيق</a>
+		<a href="#">سجل معنا كمورد</a>
+		<a href="#">أفضل العروض</a>
+		<a class="active" href="index.html">الرئيسية</a>
+	</div>
+</div>
+<!-- End Header -->
+
+<!-- START FORM -->
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                <h2 id="heading">طلب توريد خرسانة جاهزة</h2>
+				<div class="alert alert-success success-message" style="display:none;">تم تسجيل طلبك بنجاح، وسيتم الاتصال بك في أقرب وقت.</div>
+                <form id="msform">
+                    <!-- progressbar -->
+                    <ul id="progressbar">
+                        <li class="active" id="account"><strong>معلومات المنتج</strong></li>
+                        <li id="personal"><strong>المشروع</strong></li>
+                        <li id="payment"><strong>تفاصيل أخرى</strong></li>
+                        <li id="confirm"><strong>ازاي نوصلك</strong></li>
+                    </ul>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br> <!-- fieldsets -->
+                    <fieldset>
+                        <div class="form-card">
+                             <label class="fieldlabels"> * الكمية بالمتر المكعب</label> <input class="quantity" type="number" name="الكمية بالمتر المكعب" required> <label class="fieldlabels">* المحتوى الأسمنتى كجم/م</label> <select class="mohtawa" name="المحتوى الأسمنتى كجم/م" required><option disabled selected value></option><option>250</option><option>300</option><option>315</option><option>350</option></select> <label class="fieldlabels">* الإجهاد المطلوب بعد 28 يوم بـ كجم/سم2</label> <select class="ejhad" name="الإجهاد المطلوب بعد 28 يوم بـ كجم/سم2" required> <option disabled selected value></option><option>180</option><option>200</option><option>250</option><option>300</option></select> <label class="fieldlabels">* أسمنت عادى ولا مقاوم</label><select class="cement" name="أسمنت عادى ولا مقاوم"required><option disabled selected value><option>عادي</option><option>مقاوم</option></select><label class="fieldlabels">* ايه طول ذراع المضخة بالمتر؟</label><select class="tall" name="طول ذراع المضخة بالمتر"required><option disabled selected value><option>42</option><option>49</option><option>غير مطلوب</option></select>
+                        </div> <input type="button" name="next" class="next action-button" value="التالي">
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <label class="fieldlabels">* مكان المشروع</label><select class="place" name="مكان المشروع" required><option disabled selected value><option>6 أكتوبر</option><option>التجمع</option><option>العاصمة الإدارية الجديدة</option><option>العبور</option></select> <label class="fieldlabels">عنوان المشروع</label> <input class="address" name="عنوان المشروع" type="text"> <label class="fieldlabels">* مرحلة المشروع</label> <select class="stage" name="مرحلة المشروع" required><option disabled selected value><option>مرحلة التنفيذ</option><option>مرحلة تقديم المناقصات</option></select> <label class="fieldlabels">عايز تنفذ الطلبية امتى؟</label> <input class="date" type="date" name="عايز تنفذ الطلبية امتى؟">
+                        </div> <input type="button" name="next" class="next action-button" value="التالي"> <input type="button" name="previous" class="previous action-button-previous" value="السابق">
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                           <label class="fieldlabels">* طريقة الدفع</label><select class="payment" name="طريقة الدفع" required><option disabled selected value><option>كاش</option><option>آجل</option></select><label class="fieldlabels">عايز فاتورة ضريبية؟</label><select class="taxbill" name="عايز فاتورة ضريبية؟"><option disabled selected value><option>نعم</option><option>لا</option></select><label class="fieldlabels">اكتب هنا أي تفاصيل أخرى خاصة بالطلب</label><textarea class="details" name="تفاصيل أخرى"></textarea>
+                        </div> <input type="button" name="next" class="next action-button" value="التالي"> <input type="button" name="previous" class="previous action-button-previous" value="السابق">
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">						
+							<label class="fieldlabels">* اسم شركتك ايه؟ اكتب اسمك الثنائي لو مفيش شركة</label><input class="company" name="اسم الشركة" type="text" required><label class="fieldlabels">* اسمك إيه</label><input class="fname" type="text" name="الاسم" required><label class="fieldlabels">* اسم العائلة</label><input class="lname" type="text" name="اسم العائلة" required><label class="fieldlabels">* رقم تليفونك... يفضل يكون به واتساب</label><input class="phone" type="tel" name="رقم التليفون" required><label class="fieldlabels">إيميلك</label><input class="email" type="email" name="الإيميل">	
+							<label class="remeber">تذكرني على هذا الجهاز</label><input class="remember rememberme" name="تذكرني" type="checkbox"><br>
+							<label class="remeber"> تذكر المشروع</label><input class="remember rememberproject" name="تذكر المشروع" type="checkbox">
+						</div>
+						<input type="button" id="submit-button" name="button" class="next show-button" value="اطلب عرض سعر"> <input type="button" name="previous" class="previous action-button-previous" value="السابق" />						
+                    </fieldset>
+					 <fieldset>
+                        <div class="form-card">
+							<h3>:بياناتك</h3>
+							<output id="output"></output>
+															
+						</div>
+						<input type="submit" class="order-button" value="سجل طلبك"> <input type="button" name="previous" class="previous action-button-previous" value="السابق" />
+						<div class="alert alert-success success-message" style="display:none;">تم تسجيل طلبك بنجاح، وسيتم الاتصال بك في أقرب وقت.</div>
+				   </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END FORM -->
+
+<!-- Start Footer -->
+<div class="footer">
+	<p>حقوق النشر 2020 - شركة الموقع ش. ذ. م. م. | جميع الحقوق محفوظة.</p>
+	<a href="#"><i class="fa fa-facebook"></i></a>
+	<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+<!-- End Footer -->
+
+<!-- مربع المساعدة -->
+	<div id="myHelp" class="help">
+		<img onclick="myFunction()" class="cancel" src="https://dash.callbell.eu/packs/media/images/cancel-19e5c51db30cdcaecf788fb61a83a004.svg">
+		<p>أهلا بيك... احنا هنا لمساعدتك</p>
+		<a href="#"><img class="chat" src="https://dash.callbell.eu/packs/media/images/widget-chat-8af51dee0fe9faa8f4a333a5e9c540e6.svg"></a>	
+	</div>
+<!-- نهاية مربع المساعدة -->
+
+	<!-- مطلوب لشريط التقدم بتاع الفورم -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<!-- مطلوب لإرسال البيانات لفاير بيس -->	
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+	
+	<script src="myScript.js"></script>
+
+</body>
+</html>

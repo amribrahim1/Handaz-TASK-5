@@ -1,0 +1,480 @@
+
+* {box-sizing: border-box;}
+html, body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'DroidArabicKufiRegular';
+	}
+
+/* Start Header */
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 15px;
+	height: 70px;
+	z-index: 1;
+}
+.header img {
+	height: 40px;
+	margin: auto;
+	margin-left: 50px;
+}
+.header a {
+	margin: auto;
+	float: left;
+	padding: 0 22px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;   
+}
+.header .a:before { color: #935CAE; }
+.active { color: #935CAE; }
+.header-right {
+	float: right;
+	margin-right: 60px;
+}
+.header-right a:hover {
+	color: #935CAE;
+}
+/* End Header */
+
+/* تحميل النطبيق */
+.home {
+	position: absolute;
+	height: 685px;
+	width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(home-bg.jpg);
+
+}
+.buy {
+	position: absolute;
+	margin-top: 16%;
+	margin-left: 5%;
+	width: 55%;
+	float: left;
+	text-align: right;
+	color: white;
+	z-index:2;
+	
+}
+.buy h1 { font-size: 50px; line-height: 70px;  }
+.home img {
+	position: absolute;
+	right: 0px;
+	top: 150px;	
+}
+.home .button {
+	position: absolute;
+	display: block;
+	bottom: 150px;
+	right: 40%;
+}
+.home .android, .home .ios {
+	margin: 0 8px;
+	text-decoration: none;
+	text-align: center;
+	background-color: ;
+	border: none;
+	color: white;
+	padding: 7px 30px;
+	font-size: 17px;
+	cursor: pointer;
+	border: 2px solid white;
+	border-radius: 50px;
+	transition-duration: 0.4s;
+}
+.home .android {
+	background-image: linear-gradient(to right, hsl(181, 100%, 52%, 0.6), hsl(26, 100%, 52%, 0.6), hsl(39, 100%, 50%, 0.6), hsl(145, 73%, 52%, 0.6));
+}
+.home .ios {
+	background: rgba(100, 211, 255, 0.6)
+}
+.home .android:hover {
+	color: black;
+	background-image: linear-gradient(to right, hsl(181, 100%, 52%, 1), hsl(26, 100%, 52%, 1), hsl(39, 100%, 50%, 1), hsl(145, 73%, 52%, 1));
+}
+.home .ios:hover {
+	color: black;
+	background: rgba(100, 211, 255, 1)
+}
+.button i {
+	display: inline-block;
+	margin-left: 7px;
+	font-size: 20px;
+}
+/* نهاية جزء تحميل التطبيق */
+
+/* أفضل العروض */
+.offers {
+	position: relative;
+	width: 100%;
+	height: 550px;
+	top: 685px;
+	display: block;
+	text-align: center;
+	padding: 60px 0;
+	background-color: #f9f9f9;
+}
+.offers .box {
+	position: relative;
+	display: inline-block;
+	height: 300px;
+	margin: 0 13px;
+	width: 19%;
+	border: 1px solid hsl(0, 0%, 50%, 0.1);
+}
+.offers .box p {
+	position: absolute;
+	top: 0;
+	margin: 0px;
+	width: 100%;
+	color: white;
+	background-color: #935CAE;
+	padding: 7px 0;
+}
+.box img {
+	position: absolute;
+	display: inline-block;
+	width: 60%;
+	top: 20%; left: 21%;
+	padding: 20px;
+	background-color: white;
+	border: 1px solid hsl(0, 0%, 50%, 0.2);
+	border-radius: 50%;
+}
+.box button {
+	position: absolute;
+	bottom: 5%;
+	left: 16%;
+	width: 70%;
+	background-color: rgb(118, 219, 110);
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 8px 20px;
+	border-radius: 50px;
+	transition-duration: 0.4s;
+}
+.box button:hover {
+	color: black;
+	background-color: white;
+	border: 1px solid hsl(0, 0%, 50%, 0.3);
+}
+.box button a {
+	text-decoration: none;
+	color: white;	
+}
+.box button:hover a {
+	color: black;
+}
+/* نهاية جزء أفضل العروض */
+
+/* مواد بناء أخرى */
+.other {
+	position: relative;
+	width: 100%;
+	top: 685px;
+	text-align: center;
+	padding: 30px 0 0 0;
+	display: block;
+}
+.other h1, .join h1, .how h1, .download h1, .register h1 { font-size: 44px;}
+.other button {
+	position: absolute;
+	right: 35%; left: 45%;
+	margin-top: 4%;
+	background-color: rgb(118, 219, 110);
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 11px 20px;
+	border-radius: 50px;
+	transition-duration: 0.4s;
+}
+.other button a {
+	text-decoration: none;
+	color: white;	
+}
+.other button:hover {
+	background-color: white;
+	border: 1px solid hsl(0, 0%, 50%, 0.3);
+}
+.other button:hover a {
+	color: black;
+}
+/* نهاية جزء مواد بناء أخرى */
+
+/* انضم إلينا كمورد */
+.join {
+	position: relative;
+	width: 100%;
+	height: 430px;
+	top: 850px;
+	display: block;
+	text-align: center;
+	padding: 35px 0;
+	background-color: #f9f9f9;
+}
+.join .block {
+	position: relative;
+	display: inline-block;
+	height: 300px;
+	margin: 0 0px;
+	width: 21%;
+	float: right;
+	margin-right: 3%;
+	text-align: right;
+}
+.join .block .para {
+	position: absolute;
+	height: 100%;
+	right: 20%;
+	margin: auto;
+	line-height: 25px;
+}
+.join .block i {
+	position: absolute;
+	top: 10%;
+	right: 0%;
+	padding: 15px;
+	color: #935CAE;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	background-color: white;
+	border-radius: 50%;
+	transition-duration: 0.4s;
+}
+.join .block:hover i {
+	color: white;
+	background-color: #935CAE;
+}
+.join button {
+	position: absolute;
+	bottom: 6%;
+	right: 35%; left: 45%;
+	background-color: #b4b4b4;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 15px 26px;
+	transition-duration: 0.2s;
+}
+.join button a {
+	text-decoration: none;
+	color: black;
+}
+.join button:hover {
+	background-color: #935CAE;
+	border: 1px solid hsl(0, 0%, 50%, 0.3);
+}
+.join button:hover a {
+	color: white;
+}
+/* نهاية جزء انضم إلينا كمورد */
+
+/* كيف يعمل تطبيق الموقع؟ */
+.how {
+	position: relative;
+	width: 100%;
+	height: 1000px;
+	top: 1015px;
+	display: block;
+	text-align: center;
+	padding: 35px 0;
+}
+.how .howbox {
+	position: relative;
+	display: inline-block;
+	height: 300px;
+	margin: 0 0px;
+	width: 29%;
+	float: right;
+	margin-right: 3%;
+	text-align: right;
+}
+.how .howbox .screenshot {
+	position: absolute;
+	right: 18%;
+}
+.how .howbox i {
+	position: absolute;
+	top: 10%;
+	right: 0;
+	padding: 15px;
+	color: #935CAE;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	background-color: white;
+	border-radius: 50%;
+	transition-duration: 0.4s;
+}
+.how .howbox:hover i {
+	color: white;
+	background-color: #935CAE;
+}
+.how .howbox .screenshot img {
+	position: absolute;
+	right: 0;
+	width: 270px;
+	height: 500px;	
+}
+/* نهاية جزء كيف يعمل تطبيق الموقع؟ */
+
+/* شركاؤنا */
+.clients {
+	position: relative;
+	top: 700px;
+	width: 100%;
+	height: 350px;
+	background-color: #f9f9f9;
+	background-size: cover;
+	text-align: center;
+	padding: 50px 0;
+}
+#slider,  #slider .slide{
+	width: 200px;
+	height: 60px;
+}
+#slider {
+	position: relative;
+	padding-top: -10%;
+	overflow: hidden;
+	margin: 0 auto;
+	font-size: 1.4em;
+}
+#slider .container {
+  position: relative;
+  width: 9000px; /* Assign an insanely large width */
+  animation: slide-animation 15s infinite;
+}
+#slider .slide {
+  color: #14b747;
+  text-align: center;
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  
+}
+
+/* [ANIMATION] */
+@keyframes slide-animation {
+  0% { opacity: 1; right: 0; }
+  22% { opacity: 1; right: 0; }
+  33% { right: 100%; }
+  66% { right: 100%; }
+  77% { right: 200%; }
+  99% { opacity: 1; right: 200%; }
+  100% { opacity: 0; right: 200%; }
+}
+.clients img {
+	width: 120px;
+	height: 120px;
+}
+/* نهاية جزء شركاؤنا */
+
+/* حمل تطبيق الموقع */
+.download {
+	position: relative;
+	top: 700px;
+	width: 100%;
+	text-align: center;
+	background-image: linear-gradient(60deg, #464498,#6b358b, #3e225d); /* استخدمتinspect عشان أجيب الألوان دي :') */
+	color: white;
+	height: 280px;
+	padding: 50px 0;
+}
+.download img {
+	display: inline-block;
+	flaot: left;
+	margin: 30px 10px;
+}
+/* نهاية جزء تحميل التطبيق */
+
+/* سجل معنا */
+.register {
+	position: relative;
+	top: 700px;
+	width: 100%;
+	text-align: center;
+	height: 250px;
+	padding: 50px 0;
+}
+.register p { margin-top: 3%; }
+/* نهاية جزء سجل معنا */
+
+/* اتصل بنا */
+.call {
+	position: relative;
+	top: 700px;
+	width: 100%;
+	background-color: #f9f9f9;
+	text-align: center;
+	height: 220px;
+	padding: 50px 20px;
+}
+.call .callbox {
+	display: inline-block;
+	width: 29%;
+	float: left;
+	margin: 0 2%;
+	text-align: center;
+}
+.call .callbox i { font-size: 40px; }
+.call .callbox p { font-size: 15px; }
+/* اتصل بنا */
+
+/* Start Footer */
+.footer {
+	position: relative;
+	top: 700px;
+	width: 100%;
+	background-color: #313238;
+	color: white;
+	text-align: center;
+	height: 80px;
+	padding: 0 50px;
+}
+.footer p { 
+	position: absolute;
+	float: left;
+	margin-left: 10%;
+	top: 45%;
+}
+.footer i {
+	font-size: 22px;
+	float: right;
+	margin: 2% 2%;
+	color: white;
+}
+.footer i:hover {
+	color: rgb(147, 92, 174);
+}
+/* End Footer */
+
+/* مربع المساعدة*/
+.help {
+	position: fixed;
+	bottom: 20px; right: 20px;
+	
+}
+.help .chat { 
+	display: inline-block;
+	width:50px; height: 50px;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.help p { 
+	display: inline-block;
+	background-color: white;
+	width: 200px;
+	text-align: center; 
+	padding: 10px 5px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.help .cancel { width:20px; height: 20px; display: none }
+.help:hover .cancel { display: inline-block; }
+/* نهاية مربع المساعدة */
